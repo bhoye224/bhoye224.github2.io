@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Devinette</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="auth" class="auth-container">
+            <h1>Jeu de Devinette</h1>
+            <div id="register" class="auth-form">
+                <h2>Inscription</h2>
+                <input type="text" id="registerName" placeholder="Nom">
+                <input type="password" id="registerPassword" placeholder="Mot de passe">
+                <input type="file" id="registerPhoto" accept="image/*">
+                <button onclick="register()">S'inscrire</button>
+                <p>Vous avez déjà un compte ? <span onclick="showLogin()">Se connecter</span></p>
+            </div>
+            <div id="login" class="auth-form" style="display:none;">
+                <h2>Connexion</h2>
+                <input type="text" id="loginName" placeholder="Nom">
+                <input type="password" id="loginPassword" placeholder="Mot de passe">
+                <button onclick="login()">Se connecter</button>
+                <p>Vous n'avez pas de compte ? <span onclick="showRegister()">S'inscrire</span></p>
+            </div>
+        </div>
+        <div id="game" class="game-container" style="display:none;">
+            <div class="profile">
+                <img id="profilePhoto" src="" alt="Photo de profil">
+                <span id="profileName"></span>
+            </div>
+            <div class="scoreboard">
+                <div id="score">Score: 0</div>
+                <div id="attemptsCount">Tentatives restantes: 3</div>
+            </div>
+            <div class="word-container">
+                <div id="hiddenWord"></div>
+                <input type="text" id="guess" placeholder="Devinez le mot">
+                <div id="feedback"></div>
+                <button onclick="makeGuess()">Deviner</button>
+                <button onclick="skipWord()">Ignorer</button>
+                <button onclick="restartGame()">Recommencer</button>
+                <button onclick="saveGame()">Sauvegarder</button>
+            </div>
+        </div>
+        <div id="leaderboard" class="leaderboard-container" style="display:none;">
+            <h2>Classement</h2>
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

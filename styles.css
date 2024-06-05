@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+}
+
+.auth-container h1, .auth-container h2, .auth-container p {
+    margin: 10px 0;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-form input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 40px);
+}
+
+.auth-form button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: #0056b3;
+}
+
+.auth-form span {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.auth-form span:hover {
+    text-decoration: underline;
+}
+
+.game-container, .profile, .scoreboard, .word-container {
+    margin: 20px 0;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.word-container input, .word-container button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 40px);
+}
+
+.word-container button {
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.word-container button:hover {
+    background-color: #0056b3;
+}
+
+.leaderboard-container {
+    margin-top: 20px;
+}
+
+.leaderboard-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leaderboard-container li {
+    padding: 5px;
+    background: #444;
+    margin: 5px 0;
+    border-radius: 5px;
+}
